@@ -3,6 +3,19 @@
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["battery"],
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+          "active": "󱓻"
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": {
