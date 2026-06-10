@@ -5,20 +5,12 @@
     "modules-right": ["battery"],
     "battery": {
         "format": "{capacity}% {icon}",
-        "format-discharging": "{icon}",
-        "format-charging": "{icon}",
-        "format-plugged": "",
         "format-icons": {
-          "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
-          "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+          "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+          "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
         },
-        "format-full": "󰂅",
-        "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
-        "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+        "tooltip-format-discharging": "{timeTo} ({power:>1.0f}W↓)",
+        "tooltip-format-charging": "{timeTo} ({power:>1.0f}W↑)",
         "interval": 5,
-        "states": {
-          "warning": 20,
-          "critical": 10
-        }
     },
 }
