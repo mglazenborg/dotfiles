@@ -31,6 +31,33 @@
   opacity: 0.5;
 }
 
+#battery,
+#pulseaudio {
+  min-width: 12px;
+  margin: 0 7.5px;
+}
+
+#tray {
+  margin-right: 16px;
+}
+
+#bluetooth {
+  margin-right: 17px;
+}
+
+#network {
+  margin-right: 13px;
+}
+
+#custom-expand-icon {
+  margin-right: 18px;
+}
+
+#clock {
+  margin-left: 8.75px;
+}
+
+
 #custom-weather {
   margin-left: 7.5px;
   margin-right: 7.5px;
@@ -41,4 +68,8 @@
   min-width: 0;
   margin: 0;
   padding: 0;
+}
+
+.hidden {
+  opacity: 0;
 }
