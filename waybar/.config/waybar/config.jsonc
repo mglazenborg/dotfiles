@@ -1,8 +1,18 @@
 {
     "layer": "top",
+    "position": "top",
+    "spacing": 0,
+    "height": 26,
+    "width": 0,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["custom/weather", "clock"],
-    "modules-right": ["battery"],
+    "modules-right": [
+        "group/tray-expander",
+        "bluetooth",
+        "network",
+        "pulseaudio",
+        "battery"
+    ],
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
@@ -25,6 +35,38 @@
     "clock": {
         "format": "{:%H:%M %A, %b %d}",
         "tooltip": false
+    },
+    "group/tray-expander": {
+        "orientation": "inherit",
+        "drawer": {
+          "transition-duration": 600,
+          "children-class": "tray-group-item"
+        },
+        "modules": ["custom/expand-icon", "tray"]
+    },
+    "custom/expand-icon": {
+        "format": "",
+        "tooltip": false,
+        "on-scroll-up": "",
+        "on-scroll-down": "",
+        "on-scroll-left": "",
+        "on-scroll-right": ""
+    },
+    "tray": {
+        "icon-size": 12,
+        "spacing": 17
+    },
+    "network": {
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "format": "{icon}",
+        "format-wifi": "{icon}",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰤮",
+        "tooltip-format-wifi": "{essid} ({frequency} GHz)",
+        "tooltip-format-ethernet": "Connected",
+        "tooltip-format-disconnected": "Disconnected",
+        "interval": 3,
+        "spacing": 1,
     },
     "battery": {
         "format": "{capacity}% {icon}",

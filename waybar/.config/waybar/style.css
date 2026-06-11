@@ -30,3 +30,15 @@
 #workspaces button.empty {
   opacity: 0.5;
 }
+
+#custom-weather {
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  min-width: 14px;
+}
+
+#custom-weather.unavailable {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
