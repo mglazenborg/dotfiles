@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
+    "modules-center": ["custom/weather", "clock"],
     "modules-right": ["battery"],
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -15,6 +15,16 @@
             "4": [],
             "5": []
         }
+    },
+    "custom/weather": {
+        "exec": "$HOME/.config/waybar/scripts/weather.sh",
+        "return-type": "json",
+        "interval": 60,
+        "tooltip": false
+    },
+    "clock": {
+        "format": "{:%H:%M %A, %b %d}",
+        "tooltip": false
     },
     "battery": {
         "format": "{capacity}% {icon}",
