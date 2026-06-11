@@ -56,6 +56,14 @@
         "icon-size": 12,
         "spacing": 17
     },
+    "bluetooth": {
+        "format": "",
+        "format-off": "󰂲",
+        "format-disabled": "󰂲",
+        "format-connected": "󰂱",
+        "format-no-controller": "",
+        "tooltip-format": "Devices connected: {num_connections}",
+    },
     "network": {
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
         "format": "{icon}",
@@ -67,6 +75,17 @@
         "tooltip-format-disconnected": "Disconnected",
         "interval": 3,
         "spacing": 1,
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "tooltip-format": "Playing at {volume}%",
+        "scroll-step": 5,
+        "format-muted": "",
+        "format-icons": {
+          "headphone": "",
+          "headset": "",
+          "default": ["", "", ""]
+        }
     },
     "battery": {
         "format": "{capacity}% {icon}",
