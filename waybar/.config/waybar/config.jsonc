@@ -77,7 +77,7 @@
         "spacing": 1,
     },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}",
         "tooltip-format": "Playing at {volume}%",
         "scroll-step": 5,
         "format-muted": "",
