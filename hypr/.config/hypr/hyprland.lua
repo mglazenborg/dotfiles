@@ -1,4 +1,4 @@
-package.path = os.getenv("HOME") .. "/.config/?.lua;" .. "/?.lua;" .. package.path
+package.path = os.getenv("HOME") .. "/.config/?.lua;" .. os.getenv("PATH") .. "/?.lua;" .. package.path
 
 require("hypr.helpers")
 
