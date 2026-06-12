@@ -1,0 +1,10 @@
+-- Application bindings
+o.bind("SUPER + RETURN", "Terminal", "launch-terminal")
+o.bind("SUPER + ALT + RETURN", "Tmux", "launch-terminal-tmux")
+o.bind("SUPER + SHIFT + RETURN", "Browser", "zen-browser")
+o.bind("SUPER + SHIFT + F", "File manager", "nautilus")
+o.bind("SUPER + SHIFT + B", "Browser", "zen-browser")
+o.bind("SUPER + SHIFT + ALT + B", "Browser (private)", "zen-browser -private-window")
+o.bind("SUPER + SHIFT + M", "Spotify", "spotify")
+o.bind("SUPER + SHIFT + O", "Obsidian", "obsidian")
+o.bind("SUPER + SHIFT + SLASH", "Passwords", "1password")
