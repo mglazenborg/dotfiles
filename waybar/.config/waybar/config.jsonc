@@ -16,7 +16,17 @@
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
-          "active": "󱓻"
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "0",
+            "active": "󱓻"
         },
         "persistent-workspaces": {
             "1": [],
@@ -62,7 +72,7 @@
         "format-disabled": "󰂲",
         "format-connected": "󰂱",
         "format-no-controller": "",
-        "tooltip-format": "Devices connected: {num_connections}",
+        "tooltip-format": "Devices connected: {num_connections}"
     },
     "network": {
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
@@ -74,7 +84,7 @@
         "tooltip-format-ethernet": "Connected",
         "tooltip-format-disconnected": "Disconnected",
         "interval": 3,
-        "spacing": 1,
+        "spacing": 1
     },
     "pulseaudio": {
         "format": "{icon}",
@@ -95,6 +105,6 @@
         },
         "tooltip-format-discharging": "{timeTo} ({power:>1.0f}W↓)",
         "tooltip-format-charging": "{timeTo} ({power:>1.0f}W↑)",
-        "interval": 5,
-    },
+        "interval": 5
+    }
 }
