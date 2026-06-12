@@ -1,5 +1,6 @@
 # Theme
-theme = TokyoNight
+#theme = TokyoNight
+config-file = ?"~/.config/ghostty/ghostty.conf"
 
 # Font
 font-family = "JetBrainsMono Nerd Font"
