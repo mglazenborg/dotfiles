@@ -1,12 +1,12 @@
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 
-local active_border_color = { colors = { "rgba(33ccffee)", "rgba(00ff99ee)" }, angle = 45 }
+local active_border_color = "rgba(7aa2f7ee)"
 local inactive_border_color = "rgba(595959aa)"
 
 hl.config({
 	general = {
 		gaps_in = 5,
-		gaps_out = 10,
+		gaps_out = 20,
 		border_size = 2,
 
 		col = {
