@@ -1,3 +1,5 @@
+o = o or {}
+
 function o.bind(keys, description, dispatcher, options)
 	local opts = options or {}
 
