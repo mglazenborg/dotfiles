@@ -1,6 +1,6 @@
-o = o or {}
+a = a or {}
 
-function o.bind(keys, description, dispatcher, options)
+function a.bind(keys, description, dispatcher, options)
 	local opts = options or {}
 
 	if description then
@@ -14,7 +14,7 @@ function o.bind(keys, description, dispatcher, options)
 	hl.bind(keys, dispatcher, opts)
 end
 
-function o.window(match, rules)
+function a.window(match, rules)
 	rules.match = rules.match or {}
 
 	if type(match) == "string" then
