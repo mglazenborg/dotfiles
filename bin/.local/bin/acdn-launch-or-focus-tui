@@ -1,0 +1,6 @@
+#!/bin/bash
+
+APP_ID="dev.accessdenied.$(basename $1)"
+LAUNCH_COMMAND="launch-tui $@"
+
+exec acdn-launch-or-focus "$APP_ID" "$LAUNCH_COMMAND"

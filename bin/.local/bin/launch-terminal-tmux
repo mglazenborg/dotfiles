@@ -1,3 +1,0 @@
-#!/bin/bash
-
-exec launch-terminal bash -c "tmux attach || tmux new -s Work"

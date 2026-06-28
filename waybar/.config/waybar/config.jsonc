@@ -73,7 +73,8 @@
         "format-disabled": "󰂲",
         "format-connected": "󰂱",
         "format-no-controller": "",
-        "tooltip-format": "Devices connected: {num_connections}"
+        "tooltip-format": "Devices connected: {num_connections}",
+        "on-click": "acdn-launch-bluetooth"
     },
     "network": {
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
@@ -85,7 +86,8 @@
         "tooltip-format-ethernet": "Connected",
         "tooltip-format-disconnected": "Disconnected",
         "interval": 3,
-        "spacing": 1
+        "spacing": 1,
+        "on-click": "acdn-launch-wifi"
     },
     "pulseaudio": {
         "format": "{icon}",
@@ -96,7 +98,8 @@
           "headphone": "",
           "headset": "",
           "default": ["", "", ""]
-        }
+        },
+        "on-click": "acdn-launch-audio"
     },
     "battery": {
         "format": "{icon} {capacity}%",

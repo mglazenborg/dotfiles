@@ -1,6 +1,6 @@
 -- Application bindings
-o.bind("SUPER + RETURN", "Terminal", "launch-terminal")
-o.bind("SUPER + ALT + RETURN", "Tmux", "launch-terminal-tmux")
+o.bind("SUPER + RETURN", "Terminal", "acdn-launch-terminal")
+o.bind("SUPER + ALT + RETURN", "Tmux", "acdn-launch-terminal-tmux")
 o.bind("SUPER + SHIFT + RETURN", "Browser", "zen-browser")
 o.bind("SUPER + SHIFT + F", "File manager", "nautilus")
 o.bind("SUPER + SHIFT + B", "Browser", "zen-browser")
