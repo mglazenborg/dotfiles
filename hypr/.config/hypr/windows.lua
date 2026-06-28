@@ -19,7 +19,7 @@ hl.window_rule({
 })
 
 -- App-specific tweaks (may remove default-opacity tag).
-require("hypr.apps")
+a.require_all(os.getenv("HOME") .. "/.config/hypr/apps", "apps")
 
 -- Apply default opacity after apps have had a chance to opt out.
 a.window({ tag = "default-opacity" }, { opacity = "0.9 0.8" })

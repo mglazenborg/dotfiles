@@ -6,7 +6,7 @@ local inactive_border_color = "rgba(595959aa)"
 hl.config({
 	general = {
 		gaps_in = 5,
-		gaps_out = 20,
+		gaps_out = 10,
 		border_size = 2,
 
 		col = {

@@ -1,12 +1,14 @@
-package.path = os.getenv("HOME") .. "/.config/?.lua;" .. os.getenv("PATH") .. "/?.lua;" .. package.path
+-- Learn how to configure Hyprland: https://wiki.hypr.land/Configuring/Start/
 
-require("hypr.helpers")
+require("helpers")
 
-require("hypr.monitors")
-require("hypr.looknfeel")
-require("hypr.windows")
-require("hypr.autostart")
+-- Core configuration modules.
+require("autostart")
+require("envs")
+require("input")
+require("looknfeel")
+require("monitors")
+require("windows")
 
---require("hypr.bindings.applications")
---require("hypr.bindings.tiling")
-a.require_all("bindings", "bindings")
+-- Load all keybinding definitions.
+a.require_all(os.getenv("HOME") .. "/.config/hypr/bindings", "bindings")
