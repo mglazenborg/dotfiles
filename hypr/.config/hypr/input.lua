@@ -6,6 +6,11 @@ hl.config({
 		kb_model = "",
 		kb_options = "compose:caps",
 		kb_rules = "",
+
+		repeat_rate = 40,
+		repeat_delay = 250,
+
+		accel_profile = "flat",
 		follow_mouse = 1,
 		sensitivity = 0,
 
