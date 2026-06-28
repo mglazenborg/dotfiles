@@ -18,5 +18,8 @@ hl.window_rule({
 	no_focus = true,
 })
 
+-- App-specific tweaks (may remove default-opacity tag).
+require("hypr.apps")
+
 -- Apply default opacity after apps have had a chance to opt out.
 a.window({ tag = "default-opacity" }, { opacity = "0.9 0.8" })
