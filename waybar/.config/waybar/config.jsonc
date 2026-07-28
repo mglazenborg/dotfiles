@@ -17,6 +17,7 @@
         "on-click": "activate",
         "format": "{icon}",
         "format-icons": {
+            "default": "",
             "1": "1",
             "2": "2",
             "3": "3",
@@ -45,7 +46,13 @@
     },
     "clock": {
         "format": "{:%H:%M %A, %b %d}",
-        "tooltip": false
+        //"tooltip": false
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "format": {
+                "today": "<span color='#7aa2f7'><b>{}</b></span>"
+            }
+        }
     },
     "group/tray-expander": {
         "orientation": "inherit",

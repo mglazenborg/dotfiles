@@ -1,0 +1,23 @@
+#!/bin/bash
+
+options="  Lock\n󰒲  Suspend"
+omarchy-hibernation-available && options="$options\n󰤁  Hibernate"
+options="$options\n󰍃  Logout\n󰜉  Restart\n󰐥  Shutdown"
+
+case $(
+  echo -e "$options" |
+    acdn-launch-walker \
+      --dmenu \
+      --width 295 \
+      --minheight 1 \
+      --maxheight 630 \
+      -p "System…" \
+      2>/dev/null
+) in
+*Lock*) acdn-system-lock ;;
+*Suspend*) systemctl suspend ;;
+*Hibernate*) systemctl hibernate ;;
+*Logout*) acdn-system-logout ;;
+*Restart*) acdn-system-reboot ;;
+*Shutdown*) acdn-system-shutdown ;;
+esac
