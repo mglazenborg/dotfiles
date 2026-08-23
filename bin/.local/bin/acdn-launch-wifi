@@ -1,4 +1,4 @@
 #!/bin/bash
 
 rfkill unblock wifi
-exec acdn-launch-or-focus-tui impala
+exec acdn-launch-or-focus-tui nmtui
